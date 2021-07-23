@@ -16,9 +16,9 @@ namespace Lab09_ManhattanLINQ
 
             Console.WriteLine("Output all of the neighborhoods in this data list (Final Total: 147 neighborhoods)");
             var filter1 = new List<Feature>();
-            foreach (var item in featureList)
+            foreach (Feature item in featureList)
             {
-                filter1.Add(item.properties.neighborhood);
+                filter1.Add(item.Properties.neighborhood);
             }
             Console.WriteLine(filter1);
 
